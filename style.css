@@ -1,15 +1,73 @@
 article {
-    background:  #0000;;
+  background:  #0000;;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+img {
+    float: left;
+    display: inline;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+h3 {
+  text-align: center;
+  text-decoration: underline;
 }
 
 .portrait {
-    width: 100px;
+  width: 75%;
+  padding-left: 30%;
+  padding-bottom: 5%;
 }
 
 .main {
-
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.source {
-  
+.sources {
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 1px solid black;
+}
+
+.row {
+  width: 100%;
+}
+
+.grid-container {
+  width : 100%;
+  max-width : 1200px;
+}
+
+.row:before,
+.row:after {
+  content:"";
+  display: table ;
+  clear:both;
+}
+
+[class*='column-'] {
+  float: left;
+  min-height: 1px;
+}
+
+.column-3{
+  width: 25%;
+}
+
+.column-8{
+  width: 66.66%;
+}
+
+.grid-container *{
+  box-sizing: border-box;
 }
